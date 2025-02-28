@@ -1,0 +1,7 @@
+services:
+  whatsapp-bot:
+    build: .
+    container_name: whatsapp-bot
+    restart: always
+    volumes:
+      - ./session:/app/login # Mantém a sessão salva
